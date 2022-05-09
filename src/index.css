@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'rise_of_kingdomregular';
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

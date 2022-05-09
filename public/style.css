@@ -1,0 +1,1011 @@
+/*Start HEader CSS*/
+@font-face {
+  font-family: "rise_of_kingdomregular";
+  src: url("fonts/rise_of_kingdom-webfont.woff2") format("woff2"),
+    url("fonts/rise_of_kingdom-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.main_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*Start logo css*/
+.logo {
+  text-align: center;
+}
+.logo img {
+  position: relative;
+  max-width: 406px;
+
+  top: -139px;
+  left: -30px;
+}
+.logo {
+  height: 41px;
+}
+
+/*End logo css*/
+#header_btn > a {
+  border-radius: 11px;
+  background-image: linear-gradient(
+    to right bottom,
+    #c64fac,
+    #c64fac,
+    #c64fac,
+    #713b90,
+    #553483
+  );
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#header_btn > a:hover {
+  background-image: linear-gradient(
+      to bottom,
+      #6ad8f3,
+      #63d4f0,
+      #5ccfee,
+      #55cbeb,
+      #4ec6e9
+    );
+}
+
+.toggle,
+[id^="drop"] {
+  display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+  margin: 0;
+  padding: 20px 20px;
+  background: url("../images/gold_bg.png");
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.gold_img img {
+  position: relative;
+  top: 5px;
+}
+@media (max-width: 1200px) {
+  .gold_img img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+  a.connect_btn {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 1000px) {
+  .gold_img img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 250px;
+    top: -89px;
+    left: 10px;
+  }
+  .logo {
+    height: 14px;
+  }
+  .main {
+    padding: 20px 10px 10px 10px !important;
+  }
+  .border_pink {
+    padding: 10px !important;
+  }
+  .toggle #toggle_img {
+    position: absolute;
+    right: 40px;
+  }
+  ul.menu {
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+  ul.menu {
+    margin-top: 10px;
+    position: absolute;
+    left: 0px;
+    z-index: 1111111111111111;
+    max-width: 95%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  ul.sub_menu {
+    position: absolute !important;
+    padding: 23px 20px;
+    right: 0px;
+  }
+  ul.menu {
+    margin-top: 20px;
+  }
+  .Crystal_image_right img {
+    right: -11px !important;
+    width: 100px;
+    top: -64px !important;
+  }
+  .Crystal_image img {
+    left: -13px !important;
+    width: 100px;
+    top: -64px !important;
+  }
+  .inner_warlock {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+  }
+  .inner_warlock .warlock_img, .inner_warlock .warlock_table {
+    width: 100% !important;
+  }
+  .inner_warlock .warlock_img img {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .inner_warlock {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .inner_warlock .warlock_img, .inner_warlock .warlock_table {
+    width: 100% !important;
+  }
+  .inner_warlock .warlock_img img {
+    width: 100%;
+  }
+}
+
+a.connect_btn {
+  margin-left: 15px;
+}
+#logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
+}
+.sub_menu {
+  z-index: 111111111111111111;
+}
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+   * and adding "position:reltive" */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.btn_style ul.sub_menu, .btn_style ul.price_ul {
+  background-color: #6ad8f3;
+  border-radius: 0 0 11px 11px;
+  z-index: 10;
+  width: 100%;
+}
+.btn_style ul.sub_menu li, .btn_style ul.price_ul li {
+  margin: 0 !important;
+  text-align: center;
+}
+.btn_style ul.sub_menu li a, .btn_style ul.price_ul li a {
+  font-size: 13px;
+}
+.btn_style ul.sub_menu li:last-child, .btn_style ul.price_ul li:last-child {
+  border: none !important;
+}
+/* Styling the links */
+nav a {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+nav li a.class-links {
+  padding: 12px 25px;
+}
+
+nav li a.parent-links, #header_btn > a {
+  border-bottom: 5px solid #182250;
+  border-radius: 11px;
+  position: relative;
+  z-index: 11;
+}
+/* Background color change on Hover */
+nav a:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    #c64fac,
+    #c64fac,
+    #c64fac,
+    #713b90,
+    #553483
+  );
+}
+nav a:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    #c64fac,
+    #c64fac,
+    #c64fac,
+    #713b90,
+    #553483
+  );
+}
+/* Hide Dropdowns by Default
+   * and giving it a position of absolute */
+nav ul ul {
+  display: none;
+  position: absolute;
+  /* has to be the same number as the "line-height" of "nav a" */
+  top: 42px;
+  opacity: 0.9;
+}
+ul.inner-sub-menu > li > a {
+  font-size: 13px;
+  width: 94px;
+  padding: 10px 7px;
+}
+nav ul .sub_menu {
+  display: none;
+  position: absolute;
+  /* has to be the same number as the "line-height" of "nav a" */
+  top: 42px;
+  opacity: 0.9;
+}
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: block;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+/* Second, Third and more Tiers 
+   * We move the 2nd and 3rd etc tier dropdowns to the left
+   * by the amount of the width of the first tier.
+  */
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol 
+  li > a:after { content:  '\f078'; }*/
+li > a:only-child:after {
+  content: "";
+}
+
+/* Media Queries
+  --------------------------------------------- */
+@media all and (max-width: 768px) {
+  .gold_img {
+    display: none;
+  }
+  a.list_btn {
+    display: none;
+  }
+  .inner_nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media all and (min-width: 768px) {
+  nav ul li {
+    margin: 0px 5px !important;
+  }
+  .inner_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  div#header_btn {
+    display: flex;
+  }
+  div#header_btn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li a.parent-links {
+    background-image: linear-gradient(
+      to bottom,
+      #6ad8f3,
+      #63d4f0,
+      #5ccfee,
+      #55cbeb,
+      #4ec6e9
+    );
+    border-radius: 11px;
+  }
+}
+@media all and (max-width: 768px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+  }
+
+  .toggle:hover {
+    /*background-color: #000000;*/
+  }
+
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^="drop"]:checked + ul {
+    display: block;
+  }
+
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: #c54fab;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 17px;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-image: linear-gradient(
+      to right top,
+      #c64fac,
+      #aa49a4,
+      #8e429b,
+      #733c90,
+      #583583
+    );
+  }
+
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+
+  /* Hide menus on hover */
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+  }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
+}
+
+ul.inner-sub-menu {
+  top: 60px !important;
+  right: 64px;
+}
+ul.inner-sub-menu li {
+  background-color: #6ad8f3;
+}
+.img_Size {
+  position: relative;
+  top: 1px;
+  width: 10px;
+  margin-left: 6px;
+}
+@media all and (max-width: 330px) {
+  nav ul li {
+    display: block;
+    width: 94%;
+  }
+}
+/*End header css*/
+
+/*main content background*/
+.inner_bg {
+  background-image: url("../images/c_bg.png");
+  opacity: 0.9;
+
+  border: 2px solid #25b8d3;
+  border-radius: 25px;
+  padding: 20px 0px;
+}
+
+.border_pink {
+  margin: 50px;
+}
+.border_pink {
+  margin: 20px 0px;
+  border: 2px solid #ca0d87;
+  border-radius: 25px;
+  padding: 23px;
+}
+
+.main {
+  padding: 75px 70px 25px 70px;
+}
+
+/*OWL carousel css*/
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 650px;
+}
+.owl-dots {
+  text-align: center;
+}
+button.owl-dot {
+  border-radius: 50px !important;
+  width: 10px;
+  height: 10px;
+}
+button.owl-dot span {
+  color: #fff !important;
+  border-radius: 50px !important;
+}
+button.owl-dot {
+  margin: 0px 7px;
+}
+button.owl-dot .active {
+  background: #2ae2fd !important;
+}
+button.owl-dot.active > span {
+  background: #28d1ed;
+  padding: 2px 6px;
+}
+.owl-nav {
+  text-align: center;
+  color: #fff;
+}
+.owl-nav button span {
+  font-size: 30px;
+}
+
+.owl-nav button.owl-prev {
+  position: relative;
+  left: -24px;
+  top: 23px;
+}
+.owl-nav button.owl-next {
+  position: relative;
+  right: -30px;
+  top: 23px;
+}
+/*owl css end*/
+
+/*footer crystal*/
+.Crystal_image {
+  position: relative;
+}
+.Crystal_image img {
+  position: absolute;
+  top: -93px;
+  left: -27px;
+}
+
+.Crystal_image_right {
+  position: relative;
+}
+.Crystal_image_right img {
+  position: absolute;
+  right: 0px;
+  top: -94px;
+  right: -26px;
+}
+
+.items_style {
+  padding: 20px;
+}
+.hero-wrapper img {
+  width: 80%;
+}
+.hero-wrapper,
+.hero-wrapper img {
+  transition: 1s;
+}
+.items_style a:hover > .hero-wrapper img {
+  filter: drop-shadow(0 0 20px #6ad8f3);
+  -webkit-filter: drop-shadow(0 0 20px #6ad8f3);
+}
+.items_style a:hover > .hero-wrapper {
+  filter: drop-shadow(0 0 10px #6ad8f3);
+  -webkit-filter: drop-shadow(0 0 10px #6ad8f3);
+}
+.items_style a:hover > .Monk img {
+  filter: drop-shadow(0 0 20px #e8b996);
+  -webkit-filter: drop-shadow(0 0 20px #e8b996);
+}
+.items_style a:hover > .Monk {
+  filter: drop-shadow(0 0 10px #e8b996);
+  -webkit-filter: drop-shadow(0 0 10px #e8b996);
+}
+.items_style a:hover > .Knight img {
+  filter: drop-shadow(0 0 20px #544e87);
+  -webkit-filter: drop-shadow(0 0 20px #544e87);
+}
+.items_style a:hover > .Knight {
+  filter: drop-shadow(0 0 10px #544e87);
+  -webkit-filter: drop-shadow(0 0 10px #544e87);
+}
+.items_style a:hover > .Magician img {
+  filter: drop-shadow(0 0 20px #a1e89f);
+  -webkit-filter: drop-shadow(0 0 20px #a1e89f);
+}
+.items_style a:hover > .Magician {
+  filter: drop-shadow(0 0 10px #a1e89f);
+  -webkit-filter: drop-shadow(0 0 10px #a1e89f);
+}
+/*warlockSection main content  css*/
+.inner_warlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.warlock_img {
+  width: 40%;
+}
+.warlock_img img {
+  max-width: 400px;
+}
+
+.warlock_table {
+  width: 50%;
+}
+.warlock {
+  padding: 60px 30px;
+  min-height: 584px;
+}
+h1#war_heading {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 30px 0px;
+}
+span#war_txt {
+  font-size: 16px;
+}
+/*end warlockSection main content  css*/
+
+/*warloakc table*/
+
+table {
+  border-top: 1px solid #814193;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  width: 100%;
+  table-layout: fixed;
+}
+td.tax_color {
+  color: #be50a9;
+}
+tr#last_border {
+  border-bottom: none important;
+}
+h3#rent_heading {
+  margin: 0px;
+  font-size: 24px;
+  color: #c650ac;
+}
+.main_earn {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  border-bottom: 1px solid #fff;
+  padding: 0.35em;
+  color: #fff;
+}
+
+table th,
+table td {
+  padding: 14px 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+table th {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #63d7db;
+  text-transform: uppercase;
+}
+h2#earn_tax {
+  color: #c34fab;
+  font-weight: 300;
+}
+.earn_btn a,
+.earn_btn button {
+  background-image: linear-gradient(
+    to right bottom,
+    #c64fac,
+    #c64fac,
+    #713b90,
+    #553483
+  );
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  z-index: 111111;
+  border-radius: 8px;
+}
+.earn_btn a:hover,
+.earn_btn button:hover {
+  background-image: linear-gradient(
+    to bottom,
+    #6ad8f3,
+    #63d4f0,
+    #5ccfee,
+    #55cbeb,
+    #4ec6e9
+  );
+}
+.earn_btn button {
+  border: 0;
+  border-bottom: 4px solid #182250;
+  font-family: "rise_of_kingdomregular", Courier, monospace;
+  font-size: 21px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+  * aria-label has no advantage, it won't be read inside a table
+  content: attr(aria-label);
+  */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+/*End Warlock atble*/
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 20px;
+}
+.p_size {
+  font-size: 30px;
+  position: relative;
+  top: -3px;
+  margin: 0px 7px;
+}
+.pagination_num span:hover {
+  background: #28d1ed;
+
+  border-radius: 50px;
+}
+.pagination_num span {
+  margin: 0px 7px;
+  color: #fff;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+/* END Pagination  */
+/* POPUP  */
+.popup-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+.main_pop {
+  background: #2fa9ca;
+  padding: 30px;
+  max-width: 450px;
+  border: 3px solid #68d6e7;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 7px;
+  top: 13%;
+  /* left: 20%; */
+}
+h1.list_rent {
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.pop_input {
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+  justify-content: center;
+}
+.pop_input label {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: -2px 3px 10px #000;
+}
+
+.pop_input input {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  height: 24px;
+  margin-bottom: 10px;
+  margin-top: 6px;
+  background: #f4f2f2;
+}
+.main_pop .Crystal_image {
+  position: relative;
+}
+.range {
+  margin-top: 20px;
+}
+.main_pop .Crystal_image img {
+  position: absolute;
+  top: -30px !important;
+  left: -30px !important;
+  max-width: 60px;
+}
+.main_pop .Crystal_image_right img {
+  float: right;
+  position: relative;
+  max-width: 60px;
+  top: -29px !important;
+  left: 30px !important;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  outline: none;
+
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 14px;
+  background: #c64fac;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 14px;
+  background: #c64fac;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.rent_news {
+  display: flex;
+  justify-content: space-between;
+}
+.rent_news h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0px;
+  text-shadow: -2px 3px 10px #000;
+}
+
+input[type="checkbox"] {
+  margin-right: 7px;
+}
+.check_box {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+/*button#app_btn {
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to right bottom,
+    #c64fac,
+    #c64fac,
+    #713b90,
+    #553483
+  );
+  /* display: block; */
+ /* padding: 15px 40px;
+  color: #fff;
+  font-size: 13px;
+  margin-right: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-bottom: 5px solid #19003c;
+  cursor: pointer;
+  font-family: 'rise_of_kingdomregular';
+  font-size: 18px;
+}*/
+button#rent_btn, button#app_btn {
+  background-image: linear-gradient(
+    to right bottom,
+    #d4d4d4,
+    #bfbfbf,
+    #838383,
+    #838383
+  );
+  border-radius: 8px;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-bottom: 5px solid #0f0f0f;
+  cursor: pointer;
+  font-family: 'rise_of_kingdomregular';
+  font-size: 18px;
+  margin-right: 30px;
+}
+button#rent_btn:hover, button#app_btn:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    #c64fac,
+    #c64fac,
+    #713b90,
+    #553483
+  );
+  border-bottom: 5px solid #19003c;
+}
+.btn_approve {
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 11;
+  position: relative;
+}
+
+a#app_btn {
+  margin-right: 10px;
+}
+.popup-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+/* END POPUP */
